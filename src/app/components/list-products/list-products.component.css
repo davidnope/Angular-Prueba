@@ -1,0 +1,63 @@
+.containerListPorduct{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-gap: 10px;
+    margin: auto;
+}
+
+.detailProduct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 50vh;
+    background-color: antiquewhite;
+    right: -120%;
+    transition: all 0.5s;
+    z-index: 5;
+}
+.detailProduct p{
+    width: 80%;
+}
+
+.animationDetailProduct{
+    right: 0%;
+}
+
+swiper{
+    width: 80%;
+    height: 50%;
+}
+
+
+.imgsDetail{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+@media (min-width: 720px){
+    .containerListPorduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .detailProduct{
+        width: 50vw;
+        height: 100vh;
+    }
+    
+}
+
+@media (min-width: 1280px){
+    .containerListPorduct{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+}

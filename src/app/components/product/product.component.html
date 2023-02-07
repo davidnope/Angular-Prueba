@@ -1,0 +1,10 @@
+<div class="containerImgProduct">
+    <div *ngIf="product.images.length > 0" class="imgProducto" [style.background-image]="'url('+ (product.images.length > 0 ? product.images[0] : 'https://kr4m.com/wp-content/uploads/2019/05/Webp.net-compress-image-3.jpg') +')'"></div>
+</div>
+<!-- <img class="imgProducto" [src]="product.image" alt=""> -->
+<div class="textProduct">
+    <p>{{product.title}}</p>
+    <p>{{product.price}}</p>
+</div>
+<button (click)="shoppingCartAdd()" class="addButtom">+</button>
+<button (click)="detailProductAdd()" class="detailButtom">*</button>

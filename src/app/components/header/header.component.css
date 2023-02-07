@@ -1,0 +1,157 @@
+.contenedorHeader{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: wheat;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    width: 100%;
+    height: 7vh;
+}
+
+/* LOGO */
+.cotenedorLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.logo{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://www.designevo.com/res/templates/thumb_small/yellow-handbag-and-black-t-shirt.webp');
+    width: 100%;
+    height: 100%;
+    max-width: 95px;
+    border-radius: 70px;
+}
+/* LOGO */
+
+/* LISTA DE OPCIONES */
+.listaHeader{
+    display: none;
+}
+/* LISTA DE OPCIONES */
+
+/* ICONOS HEADER */
+
+.contenedorIconos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35%;
+}
+.iconCarrito{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3394/3394009.png');
+    width: 60%;
+    max-width: 35px;
+    height: 60%;
+    position: relative;
+}
+.contador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -9px;
+    bottom: 16px;
+    background-color: rgb(0, 51, 128);
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    color: white;
+    font-size: 11px;
+}
+
+.iconMain{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/images/Main.png');
+    width: 40%;
+    max-width: 25px;
+    height: 40%;
+    border-radius: 5px;
+}
+
+.iconMain:hover{
+    background-color: aqua;
+}
+
+/* ICONOS HEADER */
+
+/* MENU DESPLEGABLE */
+
+.mainDesplegable{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+    left: 100%;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.animationMain{
+    left: 0%;
+}
+
+.iconCerrar{
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/images/Close.jpg');
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+/* MENU DESPLEGABLE */
+
+@media(min-width: 720px){
+    .contenedorHeader{
+        background-color: wheat;
+    }
+/* LISTA DE OPCIONES */
+    .listaHeader{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+        padding: 0;
+    }li{
+        margin: auto;
+        list-style: none;
+    }a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+/* LISTA DE OPCIONES */
+
+/* ICONOS HEADER */
+    .contenedorIconos{
+        width: 20%;
+    }
+
+    .iconMain{
+        display: none;
+    }
+
+/* ICONOS HEADER */
+
+    .mainDesplegable{
+        display: none;
+    }
+}
+
+@media(min-width: 1280px){
+    .contenedorHeader{
+        background-color: wheat;
+    }
+}

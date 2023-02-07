@@ -1,1 +1,53 @@
+/* https://stackoverflow.com/questions/69154197/module-not-found-cant-resolve-swiper-css */
 /* You can add global styles to this file, and also import other style files */
+@import 'swiper/swiper.min.css';
+@import 'swiper/modules/pagination/pagination.min.css';
+
+body{
+    margin: 0;
+}
+
+app-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 6;
+}
+
+app-list-products{
+    padding-top: 46px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+app-product {
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 95%;
+    height: 95%;
+    position: relative;
+    transition: all 0.5s;
+    border-radius: 20px;
+    box-shadow: 2px 8px 9px rgb(163 163 163);
+}
+
+app-product:hover{
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 720px){
+
+}
+
+@media (min-width: 1280px){
+    app-list-products{
+        padding-top: 50px;
+    }
+}
