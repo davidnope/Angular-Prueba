@@ -1,3 +1,5 @@
-<app-header></app-header>
-<app-list-products *ngIf="apagarLista"></app-list-products>
-<button (click)="listaAdd()" [style.padding-top]="apagarLista?'0':'50px'">{{apagarLista ? 'ApagarLista' : 'PrenderLista'}}</button>
+<app-header (estadoProductosEvent)="estadoProductoEv($event)" (estadoUsuariosEvent)="estadoUsuarioEv($event)"></app-header>
+<!-- <app-list-products *ngIf="estadoProducto"></app-list-products>
+<app-users *ngIf="estadoUsuario"></app-users>
+<button *ngIf="estadoProducto" (click)="listaAdd()" [style.padding-top]="apagarLista?'0':'50px'">{{apagarLista ? 'ApagarLista' : 'PrenderLista'}}</button> -->
+<router-outlet></router-outlet>

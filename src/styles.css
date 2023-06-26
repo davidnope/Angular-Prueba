@@ -7,6 +7,20 @@ body{
     margin: 0;
 }
 
+.botonesContenedor{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.botones{
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 3px 9px #717171;
+    height: 50px;
+    cursor: pointer;
+}
+
 app-header{
     width: 100%;
     display: flex;
@@ -16,6 +30,14 @@ app-header{
 }
 
 app-list-products{
+    padding-top: 46px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+app-users{
     padding-top: 46px;
     width: 100%;
     display: flex;

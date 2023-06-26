@@ -10,7 +10,18 @@ export class AppComponent {
 
   apagarLista = true;
 
+  estadoProducto = false;
+  estadoUsuario = true;
+
   listaAdd(){
     this.apagarLista = !this.apagarLista;
+  }
+
+  estadoProductoEv(estado:boolean){
+    this.estadoProducto = estado;
+  }
+
+  estadoUsuarioEv(estado:boolean){
+    this.estadoUsuario = estado;
   }
 }

@@ -24,7 +24,7 @@
     justify-content: space-around;
 }
 
-.addButtom{
+.botonProductos{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,26 +42,7 @@
     transition: all 0.3s;
 }
 
-.addButtom:hover{
+.botonProductos:hover{
     width: 35px;
     height: 35px;
-}
-
-
-.detailButtom{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    font-size: 30px;
-    position: absolute;
-    bottom: 10px;
-    right: 50px;
-    background-color: rgb(131, 212, 131);
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s;
 }

@@ -1,0 +1,22 @@
+h2{
+    width: 50%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    background-color: rgb(204, 204, 204);
+    border-radius: 20px;
+}
+.contenedorInputs{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    width: 80%;
+}
+
+.contenedorInfoUsuario{
+    width: 80%;
+}

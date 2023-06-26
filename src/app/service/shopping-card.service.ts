@@ -16,7 +16,8 @@ export class ShoppingCardService{
     private listProducts : Product[] = [];
 
   constructor() { }
-  // Agregar prducto seleccionado a la lista del carrito
+
+  // Agregar producto seleccionado a la lista del carrito
     productShoppingAdd(productSelect : Product){
     this.listProducts.push(productSelect)
     this.myCart.next(this.listProducts)

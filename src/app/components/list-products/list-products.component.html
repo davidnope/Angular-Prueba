@@ -1,9 +1,16 @@
 <h2 style="width: 40%;">Lista de productos</h2>
-<p style="width: 40%;">Carrito = {{listShoppingCart.length}}</p>
-<div class="containerListPorduct">
-<app-product (detailProduct)="productdetailAdd($event)" (productAdd)="productShoppingAdd($event)" *ngFor="let product of listProducts" [product]="product"></app-product>
+
+<p style="width: 25%;">Carrito = {{listShoppingCart.length}}</p>
+
+<button class="botones" (click)="agregarProducto()">Agregar producto</button>
+<div style="width: 100%;">
+  <div class="containerListPorduct">
+    <app-product (detailProduct)="productdetailAdd($event)" (productAdd)="productShoppingAdd($event)" *ngFor="let product of listProducts" [product]="product"></app-product>
+  </div>
 <!-- [product]="listProducts" -->
 </div>
+
+<button (click)="recargarListaEmit()">Traer productos</button>
 
 <div (mouseleave)="closeDetail()" class="detailProduct" [class.animationDetailProduct]="detailProduct">
     <h2>{{productDetail.title}}</h2>
@@ -17,4 +24,8 @@
     </swiper>
     <p><b>Descripción:</b> {{productDetail.description}}</p>
     <p><b>Precio:</b> {{productDetail.price}}</p>
+    <div class="botonesContenedor">
+      <button (click)="actualizarProducto()" class="botones">Actualizar</button>
+      <button (click)="eliminarProducto()" class="botones">Borrar</button>
+    </div>
 </div>

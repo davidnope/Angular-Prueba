@@ -1,0 +1,34 @@
+<h2>Crear producto</h2>
+<form (ngSubmit)="submitCrearUsuario()">
+    <div class="contenedorInputs">
+        <label for="">Nombre</label>
+        <input type="text" name="nombre" [(ngModel)]="inputNombreCr">
+    </div>
+    <div class="contenedorInputs">
+        <label for="">Email</label>
+        <input type="email" name="correo" [(ngModel)]="inputCorreoCr">
+    </div>
+    <div class="contenedorInputs">
+        <label for="">Contraseña</label>
+        <input type="password" name="contrasena" [(ngModel)]="inputContrasenaCr" autocomplete>
+    </div>
+    <button type="submit">Crear</button>
+</form>
+
+<h2>Login</h2>
+<form (ngSubmit)="submitLogin()">
+    <div class="contenedorInputs">
+        <label for="">Email</label>
+        <input type="email" name="nombre" [(ngModel)]="inputCorreoLg">
+    </div>    <div class="contenedorInputs">
+        <label for="">Contraseña</label>
+        <input type="password" name="contrasena" [(ngModel)]="inputContrasenaLg" autocomplete>
+    </div>
+    <button type="submit">Ingresar</button>
+</form>
+
+<div class="contenedorInfoUsuario">
+    <h3>Usuario Logeado</h3>
+    <p>Nombre: {{usuarioLogeado.name}}</p>
+    <p>Email: {{usuarioLogeado.email}}</p>
+</div>

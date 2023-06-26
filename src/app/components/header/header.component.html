@@ -4,10 +4,13 @@
         <div class="logo"></div>
     </div>
     <ul class="listaHeader">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a (click)="estadoP()" href="#">Productos</a></li>
+        <li><a (click)="estadoU()" href="#">Usuarios</a></li>
     </ul>
+
+    <div *ngIf="usuarioLogeado.email" class="contenedorIconos">
+        <p>{{usuarioLogeado.email}}</p>
+    </div>
 
     <div class="contenedorIconos">
         <div (click)="despliegueMain()" class="iconMain"></div>
@@ -21,7 +24,7 @@
         <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Productos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Usuarios</a></li>
         </ul>
     </div>
 </div>
